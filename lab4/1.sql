@@ -65,10 +65,10 @@ commit;
 drop profile pf_kvs_pdb
 
 create user u1_kvs_pdb 
-    identified by 1234
-    default tablespace ts_kvs_pdb quota unlimited on ts_kvs_pdb
-    temporary tablespace ts_kvs_pdb_temp
-    PROFILE PF_KVS_PDB
+    IDENTIFIED BY 1234
+    --default tablespace ts_kvs_pdb quota unlimited on ts_kvs_pdb
+    --temporary tablespace ts_kvs_pdb_temp
+    --PROFILE PF_KVS_PDB
     container = current
     ACCOUNT UNLOCK;
     
